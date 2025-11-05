@@ -14,14 +14,15 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from 'react-router-dom';
 
 
+
 const menuItems = [
   { id: 1, name: "Home", path: "/landingPage" },
-  { id: 2, name: "About", path: "/about" },
+  { id: 2, name: "About", path: "/aboutUs" },
   { id: 3, name: "Blogs", path: "/blogsMultiCards" },
   { id: 4, name: "Contact", path: "/contact" },
   { id: 5, name: "Faqs", path: "/faqMainPage" },
   { id: 6, name: "Help", path: "/help" },
-  { id: 7, name: "Admin", path: "/responsiveDrawer" }
+  { id: 7, name: "Admin", path: "/login" },
 ];
 
 export const DrawerBar = () => {

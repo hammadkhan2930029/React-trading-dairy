@@ -1,0 +1,202 @@
+.edite_profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.edite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 70px;
+
+}
+
+/* .edite_image_div {
+    width: 50%;
+    height: 570px;
+
+} */
+
+/* .edite_image {
+    width: 100%;
+    height: 700px;
+    border-bottom-left-radius: 70px;
+    border-top-left-radius: 70px
+} */
+
+.edite_profile_form {
+    width: 100%;
+    padding: 25px;
+}
+
+.e_form .h6 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: -15px;
+    text-align: center;
+    background-color: transparent;
+
+}
+
+.edite_profile_form .e_form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.form_main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.e_form .e_input {
+    width: 45%;
+    margin: 5px;
+}
+
+.e_form .e_btn {
+    margin-top: 15px;
+    padding: 10px 30px;
+}
+
+.view_profile {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.profile_image_view {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+
+}
+
+.view_profile .userName {
+    font-size: 24px;
+    text-align: center;
+    padding: 5px;
+    color: #000;
+}
+
+/* ------------------------- MEDIA QUERIES ------------------------- */
+/* 1180px to 992px */
+@media (max-width: 1180px) {
+    .edite {
+        width: 100%;
+    }
+
+}
+
+/* 991px to 768px */
+@media (max-width: 991px) {
+    .edite {
+        flex-direction: column;
+        height: 700px;
+    }
+
+    .edite_image_div {
+        width: 100%;
+    }
+
+    .edite_image {
+        /* height: 200px; */
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        display: none;
+    }
+
+    .edite_profile_form {
+        width: 100%;
+    }
+
+    .edite_profile {
+        margin-top: 0px;
+    }
+
+}
+
+/* 767px to 576px */
+@media (max-width: 767px) {
+    .register_main {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .form {
+        padding: 10px;
+    }
+
+    .register_form .h6 {
+        margin-bottom: 20px;
+    }
+}
+
+/* 575px to 360px */
+@media (max-width: 575px) {
+    .view_profile .userName {
+        font-size: 20px;
+
+    }
+
+    .edite_profile_form .h6 {
+        margin-bottom: 0;
+    }
+
+    .e_form .e_input {
+        width: 46%;
+    }
+
+    .edite {
+        height: 800px;
+    }
+
+
+
+
+}
+
+@media (max-width: 440px) {
+    .edite_profile_form {
+        padding: 10px;
+    }
+
+    .view_profile .userName {
+        font-size: 18px;
+
+    }
+
+    .e_form .e_input {
+        width: 100%;
+    }
+
+
+
+}
+
+/* Below 360px */
+@media (max-width: 360px) {}

@@ -1,0 +1,270 @@
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    /* background: #f5f4f4; */
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 40px;
+    color: #4a5a75;
+}
+
+.about-text h2 {
+    color: #334466;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 18px;
+
+}
+
+.about-image-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-top: 20px;
+}
+
+.blue-block {
+    width: 80%;
+    height: 500px;
+    background-color: #0052cc;
+    border-radius: 10px;
+}
+
+.about-image {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    right: 0;
+    transform: translate(10%, 0);
+    border-radius: 10px;
+
+}
+
+/* ---------------------------------------------------- */
+.mission_vision_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+}
+
+.mission_vision {
+    width: 45%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #f5f5f5;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+}
+
+.mission_vision_heading {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.mission_vision_heading span {
+    font-weight: 700;
+    padding-left: 5px;
+    font-size: 32px;
+    color: #334466;
+
+}
+
+.mission_vision_text {
+    color: #8b8d91;
+
+
+    font-size: 18px;
+}
+
+/* ----------------------------------------------- */
+.tools_div {
+    background-color: #f9f9f9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tools_Heading {
+    font-size: 42px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.tools_text_div {
+    padding: 30px;
+
+}
+
+.tools_text {
+    font-size: 20px;
+    color: #8b8d91;
+
+}
+
+.widgets-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 40px;
+    background: #f9f9f9;
+}
+
+.widget-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.widget-item img {
+    width: 80px;
+    height: 80px;
+    background: #c8f0b0;
+    /* Light green background like your image */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.widget-item h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    color: #002b45;
+}
+
+.widget-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+
+
+/* --------------- Responsive --------------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .about-container {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .about-text {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-image-section {
+        margin-top: 40px;
+        width: 70%;
+    }
+
+    .blue-block {
+        width: 80%;
+        height: 550px;
+    }
+
+    .about-image {
+        width: 300px;
+        transform: translate(20%, 0);
+    }
+
+    .widgets-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .blue-block {
+        width: 90%;
+        height: 350px;
+    }
+
+    .about-image {
+        width: 220px;
+        transform: translate(10%, 0);
+    }
+
+    /* --------------------------------- */
+    .mission_vision_main {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .mission_vision {
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .mission_vision_heading span {
+
+        font-size: 24px;
+
+
+    }
+
+    .mission_vision_text {
+
+
+        font-size: 14px;
+    }
+
+    /* ----------------------------------- */
+    .widgets-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .widget-item {
+        flex-direction: row;
+    }
+
+    .widget-item img {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+    }
+
+    .widget-item h3 {
+        font-size: 16px;
+    }
+
+    .widget-item p {
+        font-size: 13px;
+    }
+}

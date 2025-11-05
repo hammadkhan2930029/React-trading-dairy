@@ -1,0 +1,129 @@
+.brokerList_container {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.brokerList_wrapper {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+/* Table */
+.brokerList_table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.brokerList_head {
+    background-color: #1976d2;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.brokerList_head th {
+    padding: 12px;
+}
+
+.brokerList_body tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.brokerList_body tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.brokerList_body tr:hover {
+    background-color: #eaf4ff;
+}
+
+.brokerList_body td {
+    padding: 12px;
+    color: #333;
+
+}
+
+/* Status Badge */
+.status {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.status.active {
+    background: #e6f4ea;
+    color: #1b5e20;
+}
+.status.inactive {
+    background: #ffebee;
+    color: #b71c1c;
+}
+
+/* Buttons */
+.brokerList_editBtn {
+    background-color: #1976d2;
+    padding: 8px 14px;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.brokerList_editBtn:hover {
+    background-color: #145ca6;
+}
+.brokerList_actions{
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    .brokerList_table {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .brokerList_wrapper {
+        padding: 15px;
+    }
+    .brokerList_table {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brokerList_wrapper {
+        width: 95%;
+        padding: 10px;
+    }
+    .brokerList_table {
+        font-size: 12px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .brokerList_editBtn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    .brokerList_body tr{
+    border-bottom: 2px solid #ddd;
+
+    }
+}

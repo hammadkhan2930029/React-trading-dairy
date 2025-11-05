@@ -1,0 +1,132 @@
+.how_div_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+.heading-1 span{
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+.how_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+}
+.new_card{
+    background-color: #1976d2;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+
+}
+
+
+.new_card_icon{
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+    
+}
+.new_card:hover .new_card_icon {
+    background-color: black;
+
+}
+.new_card:hover .new_card_icon .icon{
+    color: #fff;
+}
+.new_card_icon .icon{
+    font-size: 38px;
+    color: #1976d2;
+}
+.new_card_span1{
+    font-size: 26px;
+    color: #fff;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.new_card_span2{
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    color: #d7ebff;
+}
+/* ------------------------- MEDIA QUERIES ------------------------- */
+/* 1180px to 992px */
+@media (max-width: 1180px) {
+   
+
+
+
+}
+
+/* 991px to 768px */
+@media (max-width: 991px) {
+   
+
+
+}
+
+/* 767px to 576px */
+@media (max-width: 767px) {
+    .how_div{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .new_card{
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+}
+
+/* 575px to 360px */
+@media (max-width: 575px) {
+   
+.heading-1 span{
+    font-size: 36px;
+}
+
+
+}
+
+@media (max-width: 440px) {
+   
+.heading-1 span{
+    font-size: 32px;
+}
+
+}
+
+/* Below 360px */
+@media (max-width: 360px) {
+   
+
+
+
+}

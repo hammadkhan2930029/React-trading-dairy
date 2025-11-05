@@ -1,0 +1,62 @@
+.investment_main {
+    width: 100%;
+    padding: 10px;
+}
+
+.investmentform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.investment_form_oneTime {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total_investment_input_div {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.investment_field {
+    width: 40%;
+}
+
+.investment_crud_onetime {
+    width: 100%;
+}
+
+@media (max-width:440px) {
+    .investment_main{
+        width: 61%;
+    }
+    .total_investment_input_div{
+
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .investment_field {
+    width: 100%;
+    margin: 10px !important;
+}
+}
+@media (max-width:440px) {
+    .investment_main{
+        width: 50%;
+    }
+  
+}

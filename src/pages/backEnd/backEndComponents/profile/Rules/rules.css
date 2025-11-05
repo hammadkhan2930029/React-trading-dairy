@@ -1,0 +1,154 @@
+/* RuleForm.css */
+
+.rule-form-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+.rule-item {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-one-btn {
+  margin-top: 10px;
+}
+
+.rule-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rule-actions{
+    margin-left: 5px;
+   
+}
+.hidden{
+    display: none;
+}
+.rule-heading{
+    font-weight: bold;
+    font-size: 28px;
+
+}
+/* ---------------------------------- */
+.rules_crud_container {
+  width: 100%;
+  margin-top: 80px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.rules_table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: left;
+  background-color: #908b8b;
+  border-radius: 8px;
+  overflow: hidden;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+.rules_table_head {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.rules_table_head_row {
+  width: 100%;
+  top: 0;
+  position: sticky;
+  background-color: #1976d2;
+  z-index: 1;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.rules_table_head_row th {
+  padding: 13px;
+  text-align: center;
+  border: 1px solid #ebebeb;
+}
+
+.rules_table_body_row {
+  border-bottom: 1px solid #ddd;
+}
+
+.rules_table_body_row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.rules_table_body_row:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.rules_table_body_row:hover {
+  background-color: #e6ffe6;
+  cursor: pointer;
+}
+
+.rules_table_body_row td {
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  word-wrap: break-word;
+  border: 1px solid #ebebeb;
+}
+
+.rules_edit_btn {
+  background-color: #1976d2;
+    padding: 8px 12px;
+
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 5px;
+}
+.rules_delet_btn{
+     background-color: #e84c1c;
+  padding: 8px 12px;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.rules_edit_btn:hover {
+  background-color: #145ca6;
+}
+
+@media (min-width: 600px) {
+  .rule-buttons {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 480px) {
+  .rule-form-container {
+    padding: 10px;
+  }
+
+  .rule-buttons {
+    flex-direction: column;
+  }
+
+  .submit-one-btn {
+    width: 100%;
+  }
+}

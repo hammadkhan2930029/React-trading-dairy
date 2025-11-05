@@ -1,0 +1,175 @@
+/* Page container */
+.summary_details_page_main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+/* Back button */
+.backBtn {
+  align-self: flex-start;
+  margin-bottom: 15px;
+  padding: 8px 16px;
+  background: #1976d2;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.backBtn:hover {
+  background: #1e40af;
+}
+
+/* Main card */
+.summary_details_page {
+  width: 100%;
+  /* max-width: 1200px; */
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Heading */
+.overview_heading_index_div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #a399ff;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff
+};
+.chart_icon {
+  font-size: 32px !important;
+  color: #1976d2 !important;
+}
+.overview_heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff
+}
+
+/* Search */
+.search_main {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.search_div {
+  display: flex;
+  align-items: center;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 6px 10px;
+  width: 250px;
+  transition: 0.3s;
+}
+.search_div:hover {
+  background: #e5e7eb;
+}
+.search_input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  padding: 6px;
+  color: #111827;
+}
+.search_input::placeholder {
+  color: #9ca3af;
+}
+
+/* Table container */
+.market_table_container_summary {
+  overflow-x: auto;
+}
+.market_table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  /* min-width: 800px; */
+}
+.market_table thead {
+  background: #1976d2;
+  color: white;
+}
+.market_table th, 
+.market_table td {
+  text-align: center;
+  padding: 12px 8px;
+  border-bottom: 1px solid #e5e7eb;
+  /* white-space: nowrap; */
+}
+.market_table tbody tr:nth-child(even) {
+  background: #f9fafb;
+}
+.market_table tbody tr:hover {
+  background: #eff6ff;
+}
+
+/* Pagination */
+.MuiTablePagination-root {
+  margin-top: 10px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .summary_details_page {
+    padding: 15px;
+  }
+  .overview_heading {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search_div {
+    width: 100%;
+  }
+  .search_main {
+    justify-content: center;
+  }
+  .market_table {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 440px) {
+  .overview_heading_index_div {
+    flex-direction: row;
+    align-items: center;
+  }
+  .overview_heading {
+    font-size: 16px;
+  }
+  .backBtn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  .market_table th, 
+  .market_table td {
+    padding: 8px 5px;
+    font-size:12px;
+  }
+  .summary_details_page_main{
+    width: 55%;
+  }
+}
+
+@media (max-width: 360px) {
+  
+  .summary_details_page_main{
+    width: 46%;
+  }
+}

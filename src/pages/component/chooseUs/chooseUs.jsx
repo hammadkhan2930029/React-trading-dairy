@@ -99,8 +99,9 @@ export const ChooseUs = () => {
         animate={inViewTwo ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: .8 }}>
         <motion.div className="image-display"
-         animate={{ y: [0, 20, 0] }}
-         transition={{ duration: 1.5, repeat: Infinity }}>
+         //animate={{ y: [0, 20, 0] }}
+         //transition={{ duration: 1.5, repeat: Infinity }}
+         >
           <img
             src={`${currentImage}`}
             alt="Display"

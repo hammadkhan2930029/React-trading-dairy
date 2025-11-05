@@ -18,6 +18,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+  --primaryColor: '#000';
+  --primary-green: #1BA12E;
+  --primary-green-light: #B2FFC8;
+  --primary-green-dark: #00792f;
+  --primary-bg: #E5F5E8;
+  --primary-blue: #1976d2;
+  --gradient-green: linear-gradient(90deg, rgba(2, 36, 15, 1) 0%, rgba(27, 161, 46, 1) 52%, rgba(178, 255, 200, 1) 100%);
+}
 
 :root {
     --primaryColor: '#000'

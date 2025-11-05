@@ -17,12 +17,12 @@ export const Navbar = () => {
    
       {/* ---------------------------------------------------------- */}
       <div>
-        <div className='shap-container'>
+      {/* <div className='shap-container'>
 
           <div className='shaper'>
 
           </div>
-        </div>
+        </div>*/}
 
         {/* ----------------------------- */}
         <div className='container'>
@@ -33,13 +33,13 @@ export const Navbar = () => {
 
           </div>
           <motion.div
-            animate={{ y: [0, 20, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
+            //animate={{ y: [0, 20, 0] }}
+            //transition={{ duration: 1.5, repeat: Infinity }}
             className="imgDiv"
           >
 
 
-            <img className='img' src={stockreport} />
+           
 
 
           </motion.div>

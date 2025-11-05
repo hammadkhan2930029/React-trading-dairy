@@ -15,7 +15,7 @@ export const FullCard = () => {
     return (
         <motion.div className='fullCard' >
             <motion.div className="back"
-            
+
                 ref={refOne}
                 initial={{ opacity: 0, x: -100 }}
                 animate={inViewOne ? { opacity: 1, x: 0 } : {}}
@@ -27,7 +27,8 @@ export const FullCard = () => {
                     animate={inViewOne ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: .8 }}>
 
-                    <motion.div className='playIcon' ref={refOne}
+                    <motion.div className='playIcon'
+                        ref={refOne}
                         initial={{ opacity: 0, y: -100 }}
                         animate={inViewOne ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: .8 }}>

@@ -5,12 +5,13 @@
     align-items: center;
     flex-direction: row;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 20px;  
 
 }
 .faqs_first_div{
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-top: 50px;
 }
 
 .faqs_main {

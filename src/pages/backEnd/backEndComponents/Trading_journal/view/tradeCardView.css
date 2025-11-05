@@ -1,0 +1,107 @@
+.trade-card-table_main {
+ 
+  margin-top: 80px;
+  padding: 10px;
+
+}
+.back_btn{
+  background-color: #1976d2;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 80px;
+  border-radius: 5px;
+  margin: 5px;
+  color: #fff;
+  font-size: 18px;
+}
+.trade-card-table {
+  width: 98%;
+  background-color: #fff;
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+
+.trdingCard_table {
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+.t_head {
+  background: #1976d2;
+  color: #fff;
+  text-align: left;
+  font-size: 20px;
+  
+}
+.t_body tr td:first-child{
+  font-weight: bold;
+  font-size: 20px;
+}
+td{
+  background-color: #fff;
+  font-size: 16px;
+
+}
+
+th, td {
+  /* border: 1px solid #e6e4e4; */
+  padding: 10px;
+}
+
+.red-text {
+  color: red;
+  font-weight: bold;
+}
+
+.blue-text {
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.profit {
+  color: green;
+  font-weight: bold;
+}
+
+.notes-head {
+  background: yellow;
+  font-weight: bold;
+  text-align: center;
+  font-size: 22px;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  tr {
+    margin-bottom: 10px;
+  }
+  th {
+    display: none;
+  }
+}
+@media (max-width: 440px) {
+  .trade-card-table {
+  width: 100%;
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+ 
+}
+@media (max-width: 360px) {
+ 
+}

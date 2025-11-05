@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, forwardRef } from 'react';
 import { Login } from '../login/login';
 import { Register } from '../registrationForm/register';
 import { ForgotPassword } from '../forgotPassword/forgotPassword';
@@ -6,7 +6,7 @@ import './login_signup.css'
 import { motion, useInView } from "framer-motion";
 import { useSelector } from "react-redux";
 
-function LoginPage() {
+export const LoginPage = forwardRef((props, ref) => {
     const loginSignUp = useSelector((state) => state.login.formType);
     console.log('redux', loginSignUp)
 
@@ -21,7 +21,7 @@ function LoginPage() {
     const inViewOne = useInView(refOne, { triggerOnce: true });
 
     return (
-        <motion.div className='login_signup_main'>
+        <motion.div className='login_signup_main' ref={ref}>
             <motion.div className='view' ref={refOne}
                 initial={{ opacity: 0, x: -100 }}
                 animate={inViewOne ? { opacity: 1, x: 0 } : {}}
@@ -32,9 +32,8 @@ function LoginPage() {
             </motion.div>
 
 
-          
+
         </motion.div>
     );
-}
+})
 
-export default LoginPage;

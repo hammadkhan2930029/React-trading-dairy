@@ -1,0 +1,182 @@
+/* .form_div_sell{
+    display: flex;
+    justify-content: center;
+} */
+.sell_form_main_div {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-main-sell {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+
+}
+
+.heading_div_sell {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.form_sell {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+}
+
+.btn_div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.switchBtn_div_sell {
+    display: flex;
+    justify-content: end;
+}
+
+.switchBtn_div_sell .switchBtn_sell {
+    background-color: #1976d2;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 40px;
+
+}
+
+
+.submit_btn_div_buy {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.submit_btn_buy {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #1976d2;
+    font-size: 16px;
+    font-weight: 600;
+    width: 150px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .form-main-sell {
+        width: 100%;
+    }
+
+    .form_sell {
+        width: 100%;
+
+    }
+
+
+
+    .btn {
+        width: 60%;
+    }
+
+    /* .switchBtn_div_sell{
+        width: 75%;
+    } */
+    .btn_div {
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+    .form-main-sell {
+        width: 95%;
+    }
+
+    .form-main-sell {
+        width: 100%;
+    }
+
+    .form_sell {
+        width: 95%;
+    }
+
+
+
+
+    .btn {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .form_sell {
+        width: 80%;
+    }
+
+    .btn_div {
+        width: 95%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .switchBtn_div_sell .switchBtn_sell {
+
+        width: 150px;
+
+    }
+     .submit_btn_div_buy {
+
+        justify-content: start;
+        width: 56%;
+    }
+
+    .submit_btn_buy {
+
+        width: 150px;
+    }
+
+
+
+
+}

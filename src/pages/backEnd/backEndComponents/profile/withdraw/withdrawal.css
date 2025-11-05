@@ -1,0 +1,148 @@
+/* Container */
+.withdrawalMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Form wrapper */
+.withdrawalFormWrapper{
+    width: 100%;
+}
+.withdrawalFormMainOneTime {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.withdrawalHeading {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.withdrawalFormOneTime {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    flex-direction: row;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+      background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.withdrawalFormInputs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  
+
+
+}
+
+/* Buttons */
+.withdrawalTopBtnOneTime {
+    background-color: #1976d2;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Table container */
+.withdrawalCrudMainOneTime {
+    width: 100%;
+    margin-top: 40px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+.withdrawalCrudInner {
+    width: 100%;
+}
+
+/* Table specific */
+.withdrawalTableContainer {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Row & cell tweaks */
+.withdrawalTableRow {
+    /* optional per-row styles */
+}
+
+.withdrawalEditBtnOneTime {
+    background-color: #1976d2;
+    padding: 6px 10px;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+}
+
+.withdrawalEditBtnOneTime:hover {
+    background-color: #145ca6;
+}
+
+/* Pagination */
+.withdrawalTablePagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .withdrawalFormOneTime {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .withdrawalFormOneTime {
+        width: 95%;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .withdrawalFormOneTime {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .withdrawalHeading {
+        font-size: 20px;
+    }
+
+    .withdrawalEditBtnOneTime {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+}

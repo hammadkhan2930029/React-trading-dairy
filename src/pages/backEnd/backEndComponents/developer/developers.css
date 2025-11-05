@@ -1,0 +1,108 @@
+.developers_page_main {
+    padding: 20px;
+    margin-top: 80px;
+
+}
+
+.developers_page {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 25px;
+    padding: 20px;
+
+
+
+}
+
+/* top section */
+.first_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company_logo {
+    width: 120px;
+    height: auto;
+}
+
+.company_name {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* email + phone */
+.second_div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.email_div,
+.contact_div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+/* icons bottom */
+.third_div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.socialIcons {
+    cursor: pointer;
+    transition: transform .2s ease;
+}
+
+.socialIcons:hover {
+    transform: translateY(-4px);
+}
+
+/* RESPONSIVE */
+@media(max-width: 600px) {
+    .company_logo {
+        width: 120px;
+    }
+
+    .company_name_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .company_name {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+
+    .email_div,
+    .contact_div {
+        font-size: 16px;
+        gap: 0;
+    }
+
+    .socialIcons svg {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    .developers_page {
+        width: 90%;
+
+
+    }
+}

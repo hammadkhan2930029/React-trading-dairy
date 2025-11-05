@@ -1,11 +1,9 @@
 
 import React, { useState } from 'react';
 import './faqs.css'
-
 import { motion, useInView } from "framer-motion";
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
-
 import { useNavigate } from 'react-router-dom';
 
 export const Faqs = () => {

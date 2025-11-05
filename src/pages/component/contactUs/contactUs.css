@@ -1,0 +1,122 @@
+.main_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-main-contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 100px;
+    width: 80%;
+    /* height: 100vh; */
+    /* overflow: hidden; */
+
+
+}
+.heading_contact{
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.contact_form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    flex-direction: row;
+    background-color: #fff;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+
+}
+
+
+.switchBtn_div_contact{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.switchBtn_contact {
+    background-color: #1976d2;
+    padding: 15px;
+    color: #fff;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switchBtn_contact:hover {
+    background-color: rgb(54, 54, 249);
+    border-color: rgb(54, 54, 249);
+    cursor: pointer;
+}
+
+.btn-style {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    width: 90%;
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .contact_form {
+        width: 90%;
+
+    }
+
+   
+
+    .btn {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .contact_form {
+        width: 70%;
+    }
+
+    
+
+    .btn {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .contact_form {
+        width: 90%;
+        padding: 5px;
+    }
+
+   
+
+    .btn {
+        width: 60%;
+    }
+}

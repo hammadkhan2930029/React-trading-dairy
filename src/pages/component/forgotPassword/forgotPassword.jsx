@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import stock8 from '../../assets/stock-8.jpg';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { useDispatch } from "react-redux";
-import { setLogin } from "../../home/Redux/loginSlice";
+import { setLogin } from "../../backEnd/Redux/loginSlice";
 
 export const ForgotPassword = () => {
     const dispatch = useDispatch()

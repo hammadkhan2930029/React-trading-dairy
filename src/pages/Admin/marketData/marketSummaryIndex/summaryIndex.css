@@ -1,0 +1,142 @@
+
+.summary_container {
+  width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.summary_header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.summary_icon {
+  font-size: 34px;
+  color: #1d00d8;
+}
+
+.summary_title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.summary_filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.filter_field {
+  flex: 1 1 200px;
+  min-width: 180px;
+}
+
+.search_btn {
+  min-width: 50px;
+  height: 56px;
+  align-self: flex-end;
+}
+
+.summary_table_wrapper {
+  overflow-x: auto;
+}
+
+.summary_table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  min-width: 900px;
+}
+
+.summary_table th,
+.summary_table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  white-space: normal;
+}
+
+.summary_table th {
+  background: #1976d2;
+  color: white;
+}
+
+.summary_table tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.summary_table tr:hover {
+  background: #e0e0e0;
+}
+.moreBtn{
+    padding: 5px 15px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #1976d2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.moreBtn:hover{
+    background-color: #1d00d8;
+    font-weight: 600;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .summary_container{
+    width: 465px;
+  }
+   .summary_table {
+    min-width: 425px;
+  }
+  .summary_title {
+    font-size: 20px;
+  }
+
+  .filter_field {
+    flex: 1 1 100%;
+  }
+
+  .search_btn {
+    width: 100%;
+  }
+
+ 
+}
+
+@media (max-width: 480px) {
+  .summary_container {
+    width: 415px;
+    margin: 0%;
+  }
+
+  .summary_title {
+    font-size: 18px;
+  }
+
+  .summary_icon {
+    font-size: 28px;
+  }
+
+  .summary_table {
+    min-width: 375px;
+  }
+}
+@media (max-width: 360px) {
+    .summary_container{
+        width: 344px;
+    }
+    .summary_table{
+      min-width: 300px
+    }
+    
+}

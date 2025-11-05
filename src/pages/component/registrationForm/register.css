@@ -18,12 +18,12 @@
     border-radius: 70px;
 
 }
-.image_div{
+.image_div_register{
     width: 50%;
     height: 570px;
 
 }
-.image{
+.register_image{
     width: 100%;
     height: 570px;
     border-bottom-left-radius: 70px;
@@ -103,12 +103,12 @@
         height: auto;
 
     }
-    .image_div{
+    .image_div_register{
         width: 100%;
         height: 270px;
 
     }
-    .image{
+    .register_image{
         border-bottom-left-radius: 0px;
         border-top-left-radius: 0px;
         height: 270px;
@@ -152,6 +152,19 @@
     }
     .R_main{
         height: auto;
+    }
+    .image_div_register{
+        height: 250px;
+
+    }
+    .register_image{
+       
+        height: 250px;
+       
+
+    }
+    .registration_main{
+        margin-bottom: 50px;
     }
   
 }

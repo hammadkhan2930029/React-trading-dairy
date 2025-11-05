@@ -27,7 +27,7 @@
 }
 
 .nav_logo {
-    width: 60%
+    width: 100%
 }
 
 .nav_main {
@@ -35,12 +35,12 @@
     padding-left: 10px;
     padding: 10px;
     color: #000;
-    font-weight: 700;
     cursor: pointer;
+    font-weight: 500;
+
 }
 .nav_main:hover{
     font-weight: bold;
-    font-size: 22px;
     text-shadow: 2px 2px 5px rgb(255, 255, 255);
 }
 
@@ -53,4 +53,16 @@
     padding: 10px;
     font-weight: 500;
     cursor: pointer;
+}
+/* 767px to 576px */
+@media (max-width: 991px) {
+   .nav{
+    justify-content: space-between;
+   }
+}
+/* 767px to 576px */
+@media (max-width: 767px) {
+   .nav{
+    justify-content: space-between;
+}
 }

@@ -1,0 +1,64 @@
+.Edit_journal_form_main{
+    margin-top: 70px;
+
+
+}
+.Edit_journal_form{
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+}
+.Edit_journal_heading_div{
+    display: flex;
+    justify-content: center;
+    padding: 30px;  
+}
+.Edit_journal_heading{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+.Edit_journal_form_div{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    gap: 20px 0;
+}
+.Edit_journal_inputField{
+    width: 30%;
+   
+}
+.Edit_submit_btn_din{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+/* ---------- Responsive Layout ---------- */
+@media (max-width: 1024px) {
+ 
+}
+@media (max-width: 768px) {
+ .Edit_journal_inputField{
+    width: 47%;
+ }
+}
+
+@media (max-width: 600px) {
+ 
+}
+
+
+@media (max-width: 440px) {
+  
+ .Edit_journal_inputField{
+    width: 100%;
+ }
+ 
+  
+}

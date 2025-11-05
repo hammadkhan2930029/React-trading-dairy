@@ -1,0 +1,164 @@
+.highlights_form_div {
+    width: 100%;
+}
+
+.form_highlights {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    width: 96%;
+
+}
+
+.highlights_heading {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.highlights_form_main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    flex-direction: row;
+    background-color: #fff;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+}
+
+.switchBtn_div {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.switchBtn_div .switchBtn {
+    background-color: #1976d2;
+    padding: 15px;
+    color: #fff;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 5px;
+}
+
+
+
+
+
+.btn {
+    background-color: #1976d2;
+    width: 20%;
+    padding: 5px;
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(54, 54, 249);
+    border-color: rgb(54, 54, 249);
+    cursor: pointer;
+}
+
+.btn-style {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    width: 90%;
+
+}
+
+.index {
+
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .form_highlights {
+        width: 100%;
+    }
+
+    .highlights_form_main {
+        width: 85%;
+
+    }
+
+
+
+    .btn {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .highlights_form_div {
+        width: 50%;
+    }
+
+    .highlights_form_main {
+        width: 85%;
+        margin: 0;
+    }
+
+
+
+
+
+    .btn {
+        width: 60%;
+    }
+
+    .switchBtn_div {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .highlights_form_div{
+        width: 100%;
+    }
+    .highlights_form_main {
+        width: 80%;
+    }
+
+    .btn {
+        width: 60%;
+    }
+
+    .switchBtn_div {
+        width: 60%;
+    }
+
+    .highlights_heading {
+        margin-left: -90px;
+
+    }
+    
+}

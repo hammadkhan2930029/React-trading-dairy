@@ -1,0 +1,216 @@
+
+
+.holdings_container {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 80px;
+}
+
+/* ================= BACK btn ================= */
+.backBtn {
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+}
+
+.backBtn:hover {
+  background-color: #1565c0;
+}
+
+/* ================= header ================= */
+.holdings_header {
+  display: flex;
+  align-items: center;
+  background-color: #b197fc;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.holdings_chart_icon {
+  margin-right: 10px;
+}
+
+/* ================= table wrap ================= */
+.holdings_table_wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  overflow: hidden;
+}
+
+/* ================= scroll  ================= */
+
+.scrollable_table {
+  overflow-x: auto;
+}
+
+
+.scrollable_table::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollable_table::-webkit-scrollbar-thumb {
+  background-color: #1976d2;
+  border-radius: 10px;
+}
+
+.scrollable_table::-webkit-scrollbar-track {
+  background-color: #e0e0e0;
+}
+
+/* ================= table ================= */
+.holdings_table {
+  width: 100%;
+  min-width: 1000px; 
+  border-collapse: collapse;
+}
+
+.holdings_table th,
+.holdings_table td {
+  padding: 12px 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.holdings_table th {
+  background-color: #1976d2;
+  color: white;
+  text-transform: capitalize;
+}
+
+.holdings_table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.holdings_table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* ================= pagination ================= */
+.pagination {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ================= loading & alerts ================= */
+.loadingBox,
+.errorAlert,
+.emptyBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  text-align: center;
+}
+
+/* ========================================================== */
+@media screen and (max-width: 992px) {
+  .holdings_header {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  .holdings_chart_icon {
+    font-size: 22px;
+  }
+
+  .holdings_table th,
+  .holdings_table td {
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+
+  .holdings_table {
+    min-width: 900px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .holdings_container {
+    padding: 10px;
+  }
+
+  .holdings_table_wrapper {
+    padding: 10px;
+  }
+
+  .holdings_table th,
+  .holdings_table td {
+    font-size: 12px;
+    padding: 8px 6px;
+  }
+
+  .holdings_table {
+    min-width: 800px;
+  }
+
+  .holdings_header {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .holdings_container {
+    width: 43%;
+    padding: 8px;
+  }
+
+  .holdings_table_wrapper {
+    padding: 8px;
+  }
+
+  .holdings_table {
+    min-width: 350px;
+  }
+
+  .holdings_table th,
+  .holdings_table td {
+    font-size: 11px;
+    padding: 6px 5px;
+  }
+
+  .holdings_header {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .backBtn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .holdings_container{
+    width: 36%;
+  }
+  .holdings_table {
+    min-width: 360px;
+  }
+
+  .holdings_table th,
+  .holdings_table td {
+    font-size: 10px;
+    padding: 5px 4px;
+  }
+
+  .holdings_header {
+    font-size: 13px;
+  }
+}
+
