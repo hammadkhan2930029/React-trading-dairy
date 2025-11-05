@@ -1,6 +1,7 @@
 .investment_main {
     width: 100%;
     padding: 10px;
+
 }
 
 .investmentform {
@@ -56,7 +57,14 @@
 }
 @media (max-width:440px) {
     .investment_main{
-        width: 50%;
+        width: 62%;
     }
   
+}
+@media (max-width: 360px) {
+    .investment_main{
+        width: 50%;
+    }
+
+    
 }

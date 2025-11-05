@@ -9,12 +9,21 @@
   width: 100%;
   margin-top: 50px;
 }
-.sidebar_profile{
+
+
+.profile_side_bar {
   width: 25%;
 }
-.profile_side_bar{
-  width: 25%;
+
+.profileComponentMain {
+  width: 100%;
+  margin-top: 10px;
+  /* fixed sab me same */
+  padding: 0 10px;
 }
+
+
+
 
 .profile_Components {
   width: 75%;
@@ -81,7 +90,7 @@
 
 .menu_items:hover {
   background-color: #B9D9EB;
-  
+
 }
 
 /* ---------- Right side ---------- */
@@ -172,6 +181,15 @@
   scrollbar-color: #007bff #f1f1f1;
 }
 
+.drawer_top {
+  display: none;
+}
+.menuBtn{
+  color: #333;
+}
+
+
+
 /* ---------- Responsive Layout ---------- */
 @media (max-width: 1024px) {
   .profile-container {
@@ -202,6 +220,18 @@
 }
 
 @media (max-width: 600px) {
+  .profile_side_bar {
+    display: none;
+  }
+
+  .drawer_top {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #eee;
+  }
+  
+
   .profile-name {
     font-size: 18px;
   }
@@ -232,23 +262,21 @@
   .social-links {
     flex-direction: column;
   }
-   .profile_Components {
+
+  .profile_Components {
     width: 100%;
     height: auto;
     padding: 15px;
   }
 }
+
 @media (max-width: 440px) {
-   
-  .profile_side_bar{
-    width: 97%;
-
+  .profile_side_bar {
+    width: 100% !important;
+    min-width: unset !important;
   }
+
   .profile_Components {
-    width: 97%;
-    height: auto;
-    padding: 15px;
+    width: 100% !important;
   }
- 
 }
-

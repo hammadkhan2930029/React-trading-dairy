@@ -73,14 +73,14 @@ const style = {
 export const Withdrawal = () => {
     const dispatch = useDispatch()
     const TotalInvestmentList = useSelector(selectAllTransaction)
-    const withdrawalList = TotalInvestmentList.filter(item => item.fore === 'Withdrawal'); 
+    const withdrawalList = TotalInvestmentList.filter(item => item.fore === 'Withdrawal');
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 430);
     const [snackbarOpen, setSnackbarOpen] = useState(false);
     const [snackbarMessage, setSnackbarMessage] = useState('');
-    const [snackbarSeverity, setSnackbarSeverity] = useState('success'); 
+    const [snackbarSeverity, setSnackbarSeverity] = useState('success');
     const refOne = React.useRef(null);
     const inViewOne = useInView(refOne, { triggerOnce: true });
-    
+
     // State for modal and editing
     const [open, setOpen] = useState(false);
     const [editingTransactionId, setEditingTransactionId] = useState(null); // FIXED: Added missing state
@@ -88,7 +88,7 @@ export const Withdrawal = () => {
         date: '',
         amount: 0,
     });
-    
+
     // Pagination state
     const [page, setPage] = useState(0);
     const [rowsPerPage, setRowsPerPage] = useState(5);
@@ -96,12 +96,12 @@ export const Withdrawal = () => {
     // FIXED: Updated handleOpen to properly set editing data
     const handleOpen = (item) => {
         console.log('handleOpen called with item:', item);
-        
+
         if (!item || !item.id) {
             console.error('Invalid item passed to handleOpen:', item);
             return;
         }
-        
+
         try {
             // Convert date format from dd/mm/yyyy to yyyy-mm-dd for input field
             let formattedDate = '';
@@ -141,9 +141,9 @@ export const Withdrawal = () => {
 
     // FIXED: Updated handleChange for edit form
     const handleEditFormChange = (e) => {
-        setEditFormData({ 
-            ...editFormData, 
-            [e.target.name]: e.target.value 
+        setEditFormData({
+            ...editFormData,
+            [e.target.name]: e.target.value
         });
     };
 
@@ -163,14 +163,14 @@ export const Withdrawal = () => {
             await dispatch(createTransactions(values)).unwrap();
             //alert("Transaction successfully added to DB")
             setSnackbarMessage("Transaction successfully added to DB");
-            setSnackbarSeverity("success"); 
+            setSnackbarSeverity("success");
             setSnackbarOpen(true)
             resetForm();
         } catch (error) {
             console.error("Trade creation failed:", error);
             setSnackbarMessage(`Trade creation failed '${error.message}'`);
             setSnackbarSeverity("error");
-            setSnackbarOpen(true);   
+            setSnackbarOpen(true);
         } finally {
             setSubmitting(false);
         }
@@ -191,7 +191,7 @@ export const Withdrawal = () => {
     // FIXED: Updated handleUpdateTransaction withdrawal with proper form submission
     const handleupdateTransactions_withdrawal = async (e) => {
         e.preventDefault();
-        
+
         if (!editingTransactionId) {
             console.error("No transaction ID available for update.");
             return;
@@ -212,14 +212,14 @@ export const Withdrawal = () => {
                 amount: parseFloat(editFormData.amount), // Ensure it's a number
             };
 
-            await dispatch(updateTransactions_withdrawal({ 
-                id: editingTransactionId, 
-                updatedData: updateData 
+            await dispatch(updateTransactions_withdrawal({
+                id: editingTransactionId,
+                updatedData: updateData
             })).unwrap();
-            
+
             //alert("Transaction successfully updated in DB");
             setSnackbarMessage("Transaction successfully updated in DB");
-            setSnackbarSeverity("success"); 
+            setSnackbarSeverity("success");
             setSnackbarOpen(true);
             handleClose();
         } catch (error) {
@@ -233,216 +233,214 @@ export const Withdrawal = () => {
     return (
 
         <motion.div
-      ref={refOne}
-      initial={{ opacity: 0, y: 100 }}
-      animate={inViewOne ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: .8 }}
-      className='withdrawalMain'
-    >
-      {/* CREATE FORM */}
-      <Formik
-        initialValues={{
-          amount: 0,
-          date: '',
-          fore: 'Withdrawal',
-          user_id: '',
-        }}
-        validationSchema={TransactionSchema}
-        onSubmit={handlecreateTransaction}
-      >
-        {({ handleBlur, handleChange, handleSubmit, values, errors, touched }) => (
-          <form onSubmit={handleSubmit} className="withdrawalFormWrapper">
-            <div className='withdrawalFormMainOneTime'>
-              <div>
-                <span className='withdrawalHeading'>Withdrawal</span>
-              </div>
-
-              <div>
-                <Box component="form"
-                  sx={{ '& .MuiTextField-root': { m: 1, width: isMobile ? '32ch' : '36ch' } }}
-                  noValidate
-                  autoComplete="off"
-                  className='withdrawalFormOneTime'>
-                  <div className="withdrawalFormInputs">
-                    <TextField
-                      type='date'
-                      id="outlined-required"
-                      label="Date"
-                      name="date"
-                      value={values.date}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      InputLabelProps={{ shrink: true }}
-                      error={touched.date && Boolean(errors.date)}
-                      helperText={touched.date && errors.date}
-                    />
-                    <TextField
-                      id="outlined-required"
-                      label="Withdrawal"
-                      type="number"
-                      placeholder="Withdrawal..."
-                      name='amount'
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.amount}
-                      error={touched.amount && Boolean(errors.amount)}
-                      helperText={touched.amount && errors.amount}
-                    />
-                  </div>
-                </Box>
-              </div>
-
-              <Box sx={{ '& > :not(style)': { m: 1 } }}>
-                <Fab variant="extended" color="primary" type="submit" sx={{ borderRadius: '10px' }}>
-                  <SendIcon sx={{ mr: 1.5 }} />
-                  Submit
-                </Fab>
-              </Box>
-            </div>
-          </form>
-        )}
-      </Formik>
-
-      {/* TABLE SECTION */}
-      <motion.div
-        className="withdrawalCrudMainOneTime"
-        initial={{ opacity: 0, y: -100 }}
-        animate={inViewOne ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: .8 }}
-      >
-        <div className="withdrawalCrudInner">
-          <TableContainer component={Paper} className="withdrawalTableContainer">
-            <Table sx={{ minWidth: 650 }} aria-label="customized table">
-              <TableHead>
-                <TableRow>
-                  <StyledTableCell align="center">Date</StyledTableCell>
-                  <StyledTableCell align="center">Withdrawal</StyledTableCell>
-                  <StyledTableCell align="center">Actions</StyledTableCell>
-                </TableRow>
-              </TableHead>
-
-              <TableBody>
-                {withdrawalList.slice(page * rowsPerPage, (page + 1) * rowsPerPage).map((item, index) => (
-                  <StyledTableRow key={item.id || index} className="withdrawalTableRow">
-                    <StyledTableCell component="th" scope="row" align="center">
-                      {item.date}
-                    </StyledTableCell>
-                    <StyledTableCell align="center">{Number(item.amount)}</StyledTableCell>
-                    <StyledTableCell align="center">
-                      <button
-                        type="button"
-                        className="withdrawalEditBtnOneTime"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          e.stopPropagation();
-                          handleOpen(item);
-                        }}
-                        style={{
-                          cursor: 'pointer',
-                          pointerEvents: 'auto',
-                          zIndex: 1000
-                        }}
-                      >
-                        <EditIcon style={{ fontSize: '16px', marginRight: 6 }} /> Edit
-                      </button>
-                    </StyledTableCell>
-                  </StyledTableRow>
-                ))}
-                {withdrawalList.length === 0 && (
-                  <TableRow>
-                    <TableCell colSpan={3} align="center">No records found</TableCell>
-                  </TableRow>
-                )}
-              </TableBody>
-            </Table>
-          </TableContainer>
-
-          <TablePagination
-            component="div"
-            count={withdrawalList.length}
-            page={page}
-            rowsPerPage={rowsPerPage}
-            onPageChange={handleChangePage}
-            rowsPerPageOptions={[5, 10, 20]}
-            onRowsPerPageChange={handleChangeRowsPerPage}
-            className="withdrawalTablePagination"
-          />
-
-          {/* EDIT MODAL */}
-          <Modal open={open} onClose={handleClose}>
-            <Box sx={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              width: 400,
-              bgcolor: 'background.paper',
-              border: '2px solid #000',
-              boxShadow: 24,
-              p: 4,
-            }}>
-              <Typography variant="h6">Edit Transaction</Typography>
-              <form onSubmit={handleupdateTransactions_withdrawal}>
-                <Grid container spacing={2}>
-                  <Grid item xs={12}>
-                    <TextField
-                      fullWidth
-                      label="Date"
-                      name="date"
-                      type="date"
-                      value={editFormData.date}
-                      onChange={handleEditFormChange}
-                      required
-                      InputLabelProps={{ shrink: true }}
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <TextField
-                      fullWidth
-                      type="number"
-                      label="Withdrawal"
-                      name="amount"
-                      value={editFormData.amount}
-                      onChange={handleEditFormChange}
-                      required
-                    />
-                  </Grid>
-                </Grid>
-                <Box mt={2} display="flex" justifyContent="space-between">
-                  <Button type="submit" variant="contained" color="primary">
-                    Update
-                  </Button>
-                  <Button variant="outlined" color="secondary" onClick={handleClose}>
-                    Cancel
-                  </Button>
-                </Box>
-              </form>
-            </Box>
-          </Modal>
-
-          <Snackbar
-            open={snackbarOpen}
-            autoHideDuration={3000}
-            onClose={() => setSnackbarOpen(false)}
-            anchorOrigin={{ vertical: 'center', horizontal: 'center' }}
-          >
-            <MuiAlert
-              onClose={() => setSnackbarOpen(false)}
-              severity={snackbarSeverity}
-              sx={{
-                width: '100%',
-                backgroundColor: 'rgba(15, 134, 231, 0.94)',
-                color: '#fff',
-              }}
-              elevation={6}
-              variant="filled"
+            ref={refOne}
+            initial={{ opacity: 0, y: 100 }}
+            animate={inViewOne ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: .8 }}
+            className='withdrawalMain'
+        >
+            {/* CREATE FORM */}
+            <Formik
+                initialValues={{
+                    amount: 0,
+                    date: '',
+                    fore: 'Withdrawal',
+                    user_id: '',
+                }}
+                validationSchema={TransactionSchema}
+                onSubmit={handlecreateTransaction}
             >
-              {snackbarMessage}
-            </MuiAlert>
-          </Snackbar>
-        </div>
-      </motion.div>
-    </motion.div>
+                {({ handleBlur, handleChange, handleSubmit, values, errors, touched }) => (
+                    <form onSubmit={handleSubmit} className="withdrawalFormWrapper">
+                        <div className='withdrawalFormMainOneTime'>
+                            <div className='withdrawalHeading_div'>
+                                <span className='withdrawalHeading'>Withdrawal</span>
+                            </div>
+
+
+                            <div className="withdrawalFormInputs">
+                                <TextField
+                                    type='date'
+                                    id="outlined-required"
+                                    label="Date"
+                                    name="date"
+                                    className='withdrawal_input'
+                                    value={values.date}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    InputLabelProps={{ shrink: true }}
+                                    error={touched.date && Boolean(errors.date)}
+                                    helperText={touched.date && errors.date}
+                                sx={{margin:2}}
+
+                                />
+                                <TextField
+                                sx={{margin:2}}
+                                    id="outlined-required"
+                                    label="Withdrawal"
+                                    type="number"
+                                    placeholder="Withdrawal..."
+                                    className='withdrawal_input'
+                                    name='amount'
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    value={values.amount}
+                                    error={touched.amount && Boolean(errors.amount)}
+                                    helperText={touched.amount && errors.amount}
+                                />
+                            </div>
+
+                            <Box sx={{ '& > :not(style)': { m: 1 } }}>
+                                <Fab variant="extended" color="primary" type="submit" sx={{ borderRadius: '10px' }}>
+                                    <SendIcon sx={{ mr: 1.5 }} />
+                                    Submit
+                                </Fab>
+                            </Box>
+                        </div>
+                    </form>
+                )}
+            </Formik>
+
+            {/* TABLE SECTION */}
+            <motion.div
+                className="withdrawalCrudMainOneTime"
+                initial={{ opacity: 0, y: -100 }}
+                animate={inViewOne ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: .8 }}
+            >
+                <div className="withdrawalCrudInner">
+                    <TableContainer component={Paper} className="withdrawalTableContainer">
+                        <Table sx={{ minWidth: 650 }} aria-label="customized table">
+                            <TableHead>
+                                <TableRow>
+                                    <StyledTableCell align="center">Date</StyledTableCell>
+                                    <StyledTableCell align="center">Withdrawal</StyledTableCell>
+                                    <StyledTableCell align="center">Actions</StyledTableCell>
+                                </TableRow>
+                            </TableHead>
+
+                            <TableBody>
+                                {withdrawalList.slice(page * rowsPerPage, (page + 1) * rowsPerPage).map((item, index) => (
+                                    <StyledTableRow key={item.id || index} className="withdrawalTableRow">
+                                        <StyledTableCell component="th" scope="row" align="center">
+                                            {item.date}
+                                        </StyledTableCell>
+                                        <StyledTableCell align="center">{Number(item.amount)}</StyledTableCell>
+                                        <StyledTableCell align="center">
+                                            <button
+                                                type="button"
+                                                className="withdrawalEditBtnOneTime"
+                                                onClick={(e) => {
+                                                    e.preventDefault();
+                                                    e.stopPropagation();
+                                                    handleOpen(item);
+                                                }}
+                                                style={{
+                                                    cursor: 'pointer',
+                                                    pointerEvents: 'auto',
+                                                    zIndex: 1000
+                                                }}
+                                            >
+                                                <EditIcon style={{ fontSize: '16px', marginRight: 6 }} /> Edit
+                                            </button>
+                                        </StyledTableCell>
+                                    </StyledTableRow>
+                                ))}
+                                {withdrawalList.length === 0 && (
+                                    <TableRow>
+                                        <TableCell colSpan={3} align="center">No records found</TableCell>
+                                    </TableRow>
+                                )}
+                            </TableBody>
+                        </Table>
+                    </TableContainer>
+
+                    <TablePagination
+                        component="div"
+                        count={withdrawalList.length}
+                        page={page}
+                        rowsPerPage={rowsPerPage}
+                        onPageChange={handleChangePage}
+                        rowsPerPageOptions={[5, 10, 20]}
+                        onRowsPerPageChange={handleChangeRowsPerPage}
+                        className="withdrawalTablePagination"
+                    />
+
+                    {/* EDIT MODAL */}
+                    <Modal open={open} onClose={handleClose}>
+                        <Box sx={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%, -50%)',
+                            width: 400,
+                            bgcolor: 'background.paper',
+                            border: '2px solid #000',
+                            boxShadow: 24,
+                            p: 4,
+                        }}>
+                            <Typography variant="h6">Edit Transaction</Typography>
+                            <form onSubmit={handleupdateTransactions_withdrawal}>
+                                <Grid container spacing={2}>
+                                    <Grid item xs={12}>
+                                        <TextField
+                                            fullWidth
+                                            label="Date"
+                                            name="date"
+                                            type="date"
+                                            value={editFormData.date}
+                                            onChange={handleEditFormChange}
+                                            required
+                                            InputLabelProps={{ shrink: true }}
+                                        />
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <TextField
+                                            fullWidth
+                                            type="number"
+                                            label="Withdrawal"
+                                            name="amount"
+                                            value={editFormData.amount}
+                                            onChange={handleEditFormChange}
+                                            required
+                                        />
+                                    </Grid>
+                                </Grid>
+                                <Box mt={2} display="flex" justifyContent="space-between">
+                                    <Button type="submit" variant="contained" color="primary">
+                                        Update
+                                    </Button>
+                                    <Button variant="outlined" color="secondary" onClick={handleClose}>
+                                        Cancel
+                                    </Button>
+                                </Box>
+                            </form>
+                        </Box>
+                    </Modal>
+
+                    <Snackbar
+                        open={snackbarOpen}
+                        autoHideDuration={3000}
+                        onClose={() => setSnackbarOpen(false)}
+                        anchorOrigin={{ vertical: 'center', horizontal: 'center' }}
+                    >
+                        <MuiAlert
+                            onClose={() => setSnackbarOpen(false)}
+                            severity={snackbarSeverity}
+                            sx={{
+                                width: '100%',
+                                backgroundColor: 'rgba(15, 134, 231, 0.94)',
+                                color: '#fff',
+                            }}
+                            elevation={6}
+                            variant="filled"
+                        >
+                            {snackbarMessage}
+                        </MuiAlert>
+                    </Snackbar>
+                </div>
+            </motion.div>
+        </motion.div>
         // <motion.div
         //     ref={refOne}
         //     initial={{ opacity: 0, y: 100 }}
@@ -450,7 +448,7 @@ export const Withdrawal = () => {
         //     transition={{ duration: .8 }}
         //     className='withdrawal_main'>
 
-          
+
         //     <Formik
         //         initialValues={{
         //             amount: 0,
@@ -514,7 +512,7 @@ export const Withdrawal = () => {
         //         )}
         //     </Formik>
 
-          
+
         //     <motion.div className="investment_crud_onetime"
         //         ref={refOne}
         //         initial={{ opacity: 0, y: -100 }}
@@ -569,7 +567,7 @@ export const Withdrawal = () => {
         //                 onRowsPerPageChange={handleChangeRowsPerPage}
         //             />
 
-                    
+
         //             <Modal open={open} onClose={handleClose}>
         //                 <Box sx={style}>
         //                     <Typography variant="h6">Edit Transaction</Typography>
@@ -623,7 +621,7 @@ export const Withdrawal = () => {
         //                         width: '100%',
         //                         backgroundColor: 'rgba(15, 134, 231, 0.94)',
         //                         color: '#fff',
-                                
+
         //                     }}
         //                 elevation={6}
         //                 variant="filled"
