@@ -1,0 +1,274 @@
+.rulesView_container {
+  width: 100%;
+}
+
+.rules-list-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  margin-top: 80px;
+}
+
+.rules-list-heading {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1976d2;
+}
+
+.rules_grid {
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.rule_card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.rule_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.rule_number {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1976d2;
+  padding: 10px;
+  width: 10%;
+  height: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+.rule_text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-left: 5px;
+  width: 90%;
+}
+
+@media (max-width: 1024px) {
+  .rule_number {
+    width: 15%;
+  }
+
+  .rule_text {
+    width: 85%;
+  }
+
+
+
+}
+
+@media (max-width: 900px) {
+  .rule_number {
+    width: 20%;
+  }
+
+  .rule_text {
+    width: 80%;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .rule_card {
+    flex-direction: column;
+
+  }
+
+  .rule_number {
+    width: 30%;
+    height: auto;
+    border-radius: 50px;
+    font-size: 15px;
+
+  }
+
+  .rule_text {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+}
+
+/* RuleForm.css */
+
+.rule-form-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+.rule-item {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-one-btn {
+  margin-top: 10px;
+}
+
+.rule-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rule-actions{
+    margin-left: 5px;
+   
+}
+.hidden{
+    display: none;
+}
+.rule-heading{
+    font-weight: bold;
+    font-size: 28px;
+
+}
+/* ---------------------------------- */
+.rules_crud_container {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.rules_table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: left;
+  background-color: #908b8b;
+  border-radius: 8px;
+  overflow: hidden;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+.rules_table_head {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.rules_table_head_row {
+  width: 100%;
+  top: 0;
+  position: sticky;
+  background-color: #1976d2;
+  z-index: 1;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.rules_table_head_row th {
+  padding: 13px;
+  text-align: center;
+  border: 1px solid #ebebeb;
+}
+
+.rules_table_body_row {
+  border-bottom: 1px solid #ddd;
+}
+
+.rules_table_body_row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.rules_table_body_row:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.rules_table_body_row:hover {
+  background-color: #e6ffe6;
+  cursor: pointer;
+}
+
+.rules_table_body_row td {
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  word-wrap: break-word;
+  border: 1px solid #ebebeb;
+}
+
+.rules_edit_btn {
+  background-color: #1976d2;
+    padding: 8px 12px;
+
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 5px;
+}
+.rules_delet_btn{
+     background-color: #e84c1c;
+  padding: 8px 12px;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.rules_edit_btn:hover {
+  background-color: #145ca6;
+}
+
+@media (min-width: 600px) {
+  .rule-buttons {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 480px) {
+  .rule-form-container {
+    padding: 10px;
+  }
+
+  .rule-buttons {
+    flex-direction: column;
+  }
+
+  .submit-one-btn {
+    width: 100%;
+  }
+}

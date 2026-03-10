@@ -1,0 +1,297 @@
+
+.latestProduct {
+    width: 100%;
+    background-color: #F8F8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+
+}
+
+.latest_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top_latest {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.topHeading1 {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #1976D2;
+    background-color: rgba(71, 119, 244, 0.22);
+    padding: 5px 16px;
+    border-radius: 4px;
+    letter-spacing: .6px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    width: 170px;
+}
+
+.topHeading2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+
+/* ----------------------------------------------------------------- */
+.productCards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+
+
+.productCard1 {
+    width: 33%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin: 3px;
+
+
+
+}
+
+
+.img_Div_latest {
+    width: 50%;
+
+}
+
+.card_image_latest {
+    width: 100%;
+    border-radius: 12px;
+
+
+
+}
+
+.cardData {
+    padding-left: 5px;
+    width: 50%;
+
+}
+
+.cardData .h2 {
+    font-size: 18px;
+    padding: 5px;
+
+}
+.cardData .brandName{
+    font-size: 16px;
+    padding: 5px;
+}
+
+.cardData .h7 {
+    font-size: 14px;
+    padding: 5px;
+}
+.cardData .price{
+    font-size: 18px;
+}
+
+.line {
+    width: 50%;
+    border: 2px solid #1976D2;
+    margin-top: 10px;
+}
+.btn_latest{
+    background-color: #1976D2;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    margin:5px;
+font-weight: 500;
+}
+
+
+@media (max-width: 1180px) {
+    .productCard1 {
+        width: 70%;
+    }
+
+    .productCards {
+        flex-direction: column;
+    }
+    .cardData .h2 {
+        font-size: 28px;
+        padding: 5px;
+    
+    }
+    .cardData .brandName{
+        font-size: 22px;
+        padding: 5px;
+    }
+    
+    .cardData .h7 {
+        font-size: 16px;
+        padding: 5px;
+    }
+    .cardData .price{
+        font-size: 24px;
+    }
+    .card_image_latest {
+        width: 80%;
+        border-radius: 12px;
+    
+    
+    
+    }
+    .img_Div_latest {
+      display: flex;
+      justify-content: center;
+    
+    }
+
+
+
+}
+
+/* 991px to 768px */
+@media (max-width: 991px) {
+    .productCard1 {
+        width: 70%;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .productCard1 {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .topHeading2 {
+        font-size: 26px;
+    }
+
+    .productCard1 {
+        width: 100%;
+    }
+
+    .cardData .h2 {
+        font-size: 20px;
+    }
+
+    .cardData .h7 {
+        font-size: 16px;
+        padding: 2px;
+    }
+
+
+
+
+}
+
+@media (max-width: 440px) {
+    .topHeading1 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .latestProduct {
+        padding: 10px;
+    }
+    .productCards{
+        width: 100%;
+    }
+
+    .productCard1 {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .img_Div_latest {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cardData {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cardData .h2 {
+        font-size: 24px;
+    text-align: center;
+
+    }
+    .cardData .h7 {
+        font-size: 18px;
+    text-align: center;
+
+    }
+
+    .productCards {
+        width: 90%;
+    }
+.card_image_latest{
+    width: 100%;
+}
+
+
+
+}
+
+@media (max-width: 360px) {
+    .productCard1 {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .img_Div_latest {
+        width: 100%;
+
+    }
+
+    .cardData {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cardData .h2 {
+        font-size: 26px;
+    }
+
+
+
+}

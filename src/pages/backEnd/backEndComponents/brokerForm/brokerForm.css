@@ -1,0 +1,193 @@
+.form-main-brokerForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+.heading {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.form_broker_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.range_section {
+    width: 100%;
+}
+
+.form_broker {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-direction: row;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.borker_dropDown {
+    width: 55% !important;
+}
+
+.border_Add_btn {
+    background-color: #1976d2;
+    padding: 15px 15px;
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: 5px;
+}
+
+.border_Add_btn:hover {
+    background-color: #145ca6;
+    cursor: pointer;
+}
+
+/* .broker_input_row{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.broker_input{
+    width: 25%;
+    margin: 0 10px;
+}
+.broker_input_charges{
+      width: 40%;
+    margin: 0 10px;
+
+}
+.sub_heading_div{
+    width: 95%;
+    margin-top: 10px;
+    padding: 10px;
+
+
+}
+.sub_heading{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+.btn {
+    background-color: blue;
+    width: 20%;
+    padding: 5px;
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(54, 54, 249);
+    border-color: rgb(54, 54, 249);
+    cursor: pointer;
+}
+
+.btn-style {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    width: 90%;
+
+}
+
+.error {
+    color: red;
+    font-size: 16px;
+}
+.back_btn_div{
+    width: 100%;
+    margin-left: 20px;
+
+}
+.b_form_backbtn{
+        background-color: #1976d2;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+@media (max-width: 600px) {
+    .form_broker {
+        width: 85%;
+
+    }
+
+
+
+    .btn {
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 440px) {
+    .form_broker {
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+        padding: 10px;
+
+    }
+
+
+    .btn {
+        width: 60%;
+    }
+
+    .borker_dropDown {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .form_broker {
+        width: 95%;
+    }
+
+
+
+    .btn {
+        width: 60%;
+    }
+}

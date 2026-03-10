@@ -1,0 +1,98 @@
+.form-main-monthly{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 100px;
+    width: 100%;
+
+}
+.heading-monthly{
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+.main-monthly{
+    width: 100%;
+    padding: 20px;
+
+}
+
+.form-monthly{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    flex-direction: row;
+    background-color: #fff;
+    margin: 10px; 
+    padding: 30px; 
+     border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+
+ } 
+ .monthly_inputField{
+    width: 30%;
+ }
+ .list_btn{
+     background-color: #1976d2;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+
+ }
+ /* ---------------------------------------------- */
+ 
+@media (max-width: 1024px) {
+    
+}
+@media (max-width: 991px) {
+   
+
+}
+
+
+@media (max-width: 768px) {
+    .monthly_inputField{
+    width: 100%;
+ }
+  
+}
+
+
+
+
+@media  (max-width: 600px) {
+    
+
+  
+
+   
+}
+
+@media  (max-width: 480px) {
+   
+
+   
+   
+}
+
+@media (max-width: 360px) {
+   
+
+
+
+   
+}

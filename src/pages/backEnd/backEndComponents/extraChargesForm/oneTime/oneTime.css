@@ -1,0 +1,168 @@
+.form-main-oneTime {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 80px;
+    width: 100%;
+    padding: 10px;
+
+
+}
+
+.heading-oneTime {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.main-form-oneTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+
+    width: 100%;
+}
+
+.form-oneTime {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+
+
+
+}
+
+.onetimeForm_input {
+    width: 30%;
+}
+
+.list_btn {
+    background-color: #1976d2;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------------------------------------------------- */
+.ex_charges_list_onetime {
+    padding: 10px;
+}
+
+.ex_charges_crud_main_onetime {
+    width: 100%;
+    margin-top: 80px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+
+
+.ex_charges_editebtn_onetime {
+    background-color: #1976d2;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.ex_charges_editebtn_onetime:hover {
+    background-color: #145ca6;
+}
+
+
+
+@media (max-width: 768px) {
+    .onetimeForm_input {
+        width: 90%;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .form-main-oneTime {
+        width: 90%;
+    }
+
+    .form-oneTime {
+        width: 85%;
+
+    }
+
+    .ex_charges_crud_main_onetime {
+        width: 86%;
+    }
+
+
+
+}
+
+@media (max-width: 480px) {
+    .form-main-oneTime {
+        width: 62%;
+    }
+
+    .form-oneTime {
+        width: 100%;
+    }
+
+    .onetimeForm_input {
+        width: 100%;
+    }
+
+    .list_btn {
+        padding: 5px 10px;
+    }
+
+    .ex_charges_crud_main_onetime {
+        width: 60%;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 360px) {
+    .form-main-oneTime {
+        width: 52%;
+    }
+
+    .ex_charges_crud_main_onetime {
+        width: 50%;
+    }
+
+
+
+
+
+}

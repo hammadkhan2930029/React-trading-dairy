@@ -1,0 +1,143 @@
+.Larg_card_2_pd_full{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 13px;
+    /* padding: 20px; */
+    border: 1px solid #e8f8ff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.roi-item{
+    margin-top: 10px;
+}
+
+.L_card_2_data_pd_full{
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+
+}
+
+.main_card_view_pd_full {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.card_pd_full {
+    background-color: #fdfdfd;
+    width: 44%;
+    /* height: 100px; */
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: inherit;
+    /* display: block; */
+}
+
+/* .card_pd_full:hover{
+    background-color: rgb(211, 211, 211);
+    cursor: pointer;
+    border: 2px solid #d9d9d9;
+} */
+
+.card_pd_full_data {
+    align-items: center;
+    text-align: center;
+}
+
+.card_pd_full_text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_title_pd_full {
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.counter_label_pd_full{
+    padding: 10px;
+    font-weight: 500;
+}
+
+.card_counter_pd_full {
+    font-size: 16px;
+    font-weight: 900;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    
+    .Larg_card_2_pd_full{
+        width: 100%;
+        height: auto;
+    }
+    
+    .card_pd_full{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+   
+    .Larg_card_2_pd_full{
+        width: 100%;
+        height: auto;
+    }
+    
+    .card_pd_full{
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+}
+@media (max-width: 360px) {
+    
+    .Larg_card_2_pd_full{
+        width: 100%;
+        height: auto;
+    }
+    
+    .card_pd_full{
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+}
+/* -------------------------------------------------------- */
+@media (max-width: 768px) {
+    
+    .Larg_card_2_ct{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+   
+    .Larg_card_2_ct{
+        width: 100%;
+    }
+    
+}
+@media (max-width: 360px) {
+    
+    .Larg_card_2_ct{
+        width: 100%;
+    }
+    
+}

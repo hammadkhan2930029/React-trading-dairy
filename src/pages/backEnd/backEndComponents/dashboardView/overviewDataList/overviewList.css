@@ -1,0 +1,230 @@
+/* .summary_main {
+    width: 98%;
+    height: 470px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 13px;
+    padding: 20px;
+    border: 1px solid #e8f8ff;
+}
+
+.market-info {
+    padding: 10px;
+    background-color: #fff;
+    width: 100%;
+   
+
+}
+.heading_div{
+    background-color: #1976d2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+
+}
+.summary_heading_dashboard{
+    font-size: 32px;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.market-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    border-bottom: 1px solid #e3e2e2;
+}
+.chartIcon{
+    color: #fff;
+  
+}
+
+@media screen and (max-width: 600px) {
+   
+}
+
+@media screen and (max-width: 412px) {
+    .summary_heading_dashboard{
+        font-size: 28px;
+    }
+   
+}
+
+@media screen and (max-width: 360px) {
+    .summary_heading_dashboard{
+        font-size: 22px;
+    }
+  
+} */
+
+/* ------------------- Main Card ------------------- */
+.summary_main {
+  width: 98%;
+  min-height: 470px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e0f2ff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.summary_main:hover {
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------- Header ------------------- */
+.heading_div {
+  background-color: #1976d2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 12px 18px;
+  box-shadow: 0px 4px 10px rgba(25, 118, 210, 0.3);
+  margin-bottom: 20px;
+}
+
+.chartIcon {
+  color: #fff;
+  font-size: 34px !important;
+  margin-right: 10px;
+}
+
+.summary_heading_dashboard {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ------------------- Loading / Error / No Data ------------------- */
+.loading_box,
+.error_box,
+.no_data_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.loading_text {
+  color: #555;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.error_box {
+  border: 1px solid #f44336;
+  background-color: #fdecea;
+  color: #b71c1c;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.error_text {
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.no_data_box {
+  color: #666;
+  font-size: 17px;
+}
+
+/* ------------------- Spinner ------------------- */
+.spinner {
+  border: 4px solid #e0e0e0;
+  border-top: 4px solid #1976d2;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ------------------- Market Info ------------------- */
+.market_info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 10px;
+}
+
+.market-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e8e8e8;
+  border-radius: 6px;
+  background-color: #fafafa;
+  transition: background 0.2s;
+}
+
+.market-row:hover {
+  background-color: #f3f8ff;
+}
+/* ====================================================== */
+.summary_main::-webkit-scrollbar {
+  width: 3px;
+}
+
+.summary_main::-webkit-scrollbar-track {
+  background: #eaf3ff;
+  border-radius: 10px;
+}
+
+.summary_main::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #1976d2, #42a5f5);
+  border-radius: 10px;
+}
+
+.summary_main::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #1258a8, #1e88e5);
+}
+
+
+
+
+
+/* ------------------- Responsive ------------------- */
+@media screen and (max-width: 768px) {
+  .summary_main {
+    padding: 15px;
+  }
+  .summary_heading_dashboard {
+    font-size: 24px;
+  }
+  .chartIcon {
+    font-size: 28px !important;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .summary_heading_dashboard {
+    font-size: 20px;
+  }
+  .heading_div {
+    justify-content: center;
+  }
+  .market_info {
+    grid-template-columns: 1fr;
+  }
+}
+@media  (max-width: 360px) {
+  .summary_main {
+    width: 100%;
+  }
+ 
+}

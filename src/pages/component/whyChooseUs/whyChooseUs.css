@@ -1,0 +1,208 @@
+/* .mainCards {
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+
+
+.section_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.h_phone_div{
+    width: 50%;
+     background-color: #0000
+
+
+}
+.headphone2{
+    width: 100%;
+    border-radius: 12px;
+    height: 520px;
+
+}
+.textSection{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px;
+
+}
+.first_heading{
+    color: var(--primary-green-dark);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.lineee{
+    width: 15%;
+    border: 2px solid #1976d2;
+    margin-top: 10px;
+}
+.sec_heading{
+     color: var(--primary-green);
+    font-size: 38px;
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+.descriptionn{
+    color: black;
+    margin-top: 20px;
+
+
+}
+.task_divs{
+    margin-top: 30px;
+}
+.task_div{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.task_text{
+    color: #000;
+    font-size: 18px;
+}
+
+
+
+@media (max-width: 1180px) {
+    .textSection{
+        padding: 20px;
+    }
+    .sec_heading{
+        font-size: 26px;
+    }
+    .descriptionn{
+        margin-top: 0;
+        font-size: 14px;
+    }
+    .task_divs{
+        margin-top: 0;
+    }
+    .task_text{
+        font-size: 16px;
+    }
+   
+
+}
+
+@media (max-width: 991px) {
+     .section_2{
+        flex-direction: column;
+    }
+    .textSection{
+        width: 100%;
+    }
+    .h_phone_div{
+        width: 100%;
+    }
+   .headphone2{
+        width: 100%;
+    }
+     .textSection{
+        padding: 20px;
+    }
+    .sec_heading{
+        font-size: 38px;
+    }
+    .descriptionn{
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .task_divs{
+        margin-top: 30px;
+    }
+    .task_text{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section_2{
+        flex-direction: column;
+    }
+    .textSection{
+        width: 100%;
+    }
+    .h_phone_div{
+        width: 100%;
+    }
+    .headphone2{
+        width: 100%;
+    }
+   
+}
+
+@media (max-width: 575px) {
+    .section_2{
+        flex-direction: column-reverse;
+    }
+ 
+    .textSection{
+        width: 100%;
+    }
+    .h_phone_div{
+        width: 100%;
+    }
+    .sec_heading{
+        font-size: 26px;
+    }
+    .descriptionn{
+        font-size: 16px;
+    }
+    
+ 
+
+}
+
+@media (max-width: 440px) {
+    .mainCards{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    
+  
+   
+    
+}
+
+@media (max-width: 360px) {
+    .mainCards {
+    
+        padding: 5px;
+    
+    }
+    
+    .h_phone_div{
+        width: 100%;
+    }
+    .textSection{
+        width: 100%;
+    }
+    .task_text{
+        font-size: 16px;
+    }
+    .task_divs{
+        margin-top: 10px;
+    }
+    
+   
+    
+}
+ */

@@ -1,0 +1,131 @@
+/* .blogsMultiCardsMain{
+    background-color: var(--primary-bg);
+}
+
+.blogsMian_multi {
+    background-color: var(--primary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog_image{
+    padding: 16px;
+}
+
+.blogsCards_multi {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 50px 30px;
+    padding: 60px;
+}
+
+.cardsBlogs_multi {
+    width: 100%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2), 0 1px 10px rgba(0, 0, 0, 0.08) !important;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: var(--primary-bg);
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: var(--primary-green);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.readMoreBtn {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(27,2,82,1) 52%, rgba(0,147,176,1) 100%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+
+}
+.btnText{
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+.readMoreBtn_div{
+        background-color: var(--primary-green);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.readMoreBtn_div:hover{
+    background-color: var(--primary-green-dark);
+}
+
+
+
+@media (max-width: 1180px) {
+    .blogsCards_multi {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardsBlogs_multi {
+        margin: 5px;
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 575px) {
+
+    .cardsBlogs_multi {
+        margin: 5px;
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 440px) {
+    .blogsCards_multi {
+
+        padding: 10px;
+    }
+
+    .pagination {
+
+        padding: 20px;
+    }
+    .breadCrumbs_div{
+        margin-top: 85px;
+    }
+
+}
+
+@media (max-width: 360px) {} */

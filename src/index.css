@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: #000;
+    background-color: #fff;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryColor: '#000';
+    --primary-green: #1976d2;
+    --primary-green-light: #87d5f7;
+    --primary-green-dark: #0059b3;
+    --primary-bg: #ffffff;
+    --primary-blue: #1976d2;
+    --gradient-green: linear-gradient(90deg, rgba(2, 36, 15, 1) 0%, rgba(27, 161, 46, 1) 52%, rgba(178, 255, 200, 1) 100%);
+}
+
+body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.codeeeee {
+    color: #5ab946;
+    /* psx side code - green */
+    color: #1BA12E;
+    /* latest front code - green */
+    color: #6ec27d;
+    /* logo green */
+    color: #35ade2;
+    /* logo blue */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    max-width: 100%;
+    /* overflow-x: hidden;    */
+}

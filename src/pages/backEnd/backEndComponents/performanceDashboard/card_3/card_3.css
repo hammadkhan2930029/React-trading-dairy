@@ -1,0 +1,146 @@
+.Larg_card_3_pd{
+    width: 100%;
+    height: 380px;
+    background-color: #fff;
+    border-radius: 13px;
+    padding: 20px;
+    border: 1px solid #e8f8ff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.roi-item{
+    margin-top: 10px;
+}
+
+.L_card_3_data_pd{
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+
+}
+
+.main_card_view_pd {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.card_pd {
+    background-color: #fdfdfd;
+    width: 35%;
+    /* height: 100px; */
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: inherit;
+    /* display: block; */
+}
+
+/* .card_pd:hover{
+    background-color: rgb(211, 211, 211);
+    cursor: pointer;
+    border: 2px solid #d9d9d9;
+} */
+
+.card_pd_data {
+    align-items: center;
+    text-align: center;
+}
+
+.card_pd_text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_title_pd {
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.counter_label{
+    padding: 10px;
+    font-weight: 500;
+}
+
+.card_counter_pd {
+    font-size: 26px;
+    font-weight: 900;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    
+    .Larg_card_3_pd{
+        width: 100%;
+        height: auto;
+    }
+    
+    .card_pd{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+   
+    .Larg_card_3_pd{
+        width: 100%;
+        height: auto;
+    }
+    
+    .card_pd{
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+}
+@media (max-width: 360px) {
+    
+    .Larg_card_3_pd{
+        width: 100%;
+        height: auto;
+    }
+    
+    .card_pd{
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+}
+
+.roi-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.roi-table th, .roi-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.roi-table th {
+    background-color: #1976d2; /* Header color */
+    color: white;
+}
+
+.roi-table tr:nth-child(even) td {
+    background-color: #f9f9f9; /* optional striped rows */
+}
+
+.roi-table td {
+    background-color: white; /* body cells no color */
+}

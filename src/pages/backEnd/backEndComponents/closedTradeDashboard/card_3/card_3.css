@@ -1,0 +1,73 @@
+.Larg_card_3_ct{
+    width: 98%;
+    height: 410px;
+
+    background-color: #fff;
+    border-radius: 13px;
+    padding: 20px;
+    border: 1px solid #e8f8ff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.roi-item{
+    margin-top: 10px;
+}
+
+.L_card_3_data_ct{
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    text-align: center,
+
+}
+@media (max-width: 768px) {
+    
+    .Larg_card_3_ct{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 480px) {
+   
+    .Larg_card_3_ct{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media (max-width: 360px) {
+    
+    .Larg_card_3_ct{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+.roi-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.roi-table th, .roi-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.roi-table th {
+    background-color: #1976d2; /* Header color */
+    color: white;
+}
+
+.roi-table tr:nth-child(even) td {
+    background-color: #f9f9f9; /* optional striped rows */
+}
+
+.roi-table td {
+    background-color: white; /* body cells no color */
+}

@@ -1,0 +1,7 @@
+Make virtual env                      -------------------           python -m venv venv
+activate it                           -------------------           venv\Scripts\activate
+change dir to package.json if needded  ------------------           cd React-Trading-web-app-main
+                                       ------------------           npm install
+                                       -------------------          npm start  
+                                       -------------------          npm run dev 
+To create build folder to uplod on host-------------------          npm run build

@@ -1,0 +1,87 @@
+
+.privacy-container-main{
+  background: var(--primary-bg);
+
+
+}
+.privacy-container {
+  width: 100%;
+  margin: 36px auto;
+  padding: 28px;
+  border-radius: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #222;
+}
+
+.policy-header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.policy-header h1 {
+  margin: 0 0 6px 0;
+  font-size: 32px;
+}
+
+.effective-date {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.policy-section {
+  margin: 18px 0;
+}
+
+.policy-section h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.policy-section p,
+.policy-section ul,
+.policy-section ol {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.policy-section ul {
+  padding-left: 20px;
+}
+
+.policy-section li {
+  margin: 8px 0;
+}
+
+.contact-section a {
+  color: #0b66ff;
+  text-decoration: none;
+}
+
+.policy-footer {
+  text-align: center;
+  margin-top: 22px;
+  color: #666;
+  font-size: 14px;
+}
+.breadCrumbs_div{
+    margin-top: 90px;
+
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .privacy-container {
+    /* margin: 18px; */
+    padding: 18px;
+  }
+
+  .policy-header h1 {
+    font-size: 24px;
+  }
+  .breadCrumbs_div{
+    margin-top: 85px;
+
+}
+}

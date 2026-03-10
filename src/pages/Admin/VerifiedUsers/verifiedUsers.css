@@ -1,0 +1,71 @@
+.verified_user_container {
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    
+    overflow-x: auto !important;
+}
+
+.verified_user {
+    width: 100%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.verified_user_container,
+.verified_user {
+    overflow-x: auto !important;
+}
+
+.mobile-table-scroll {
+    width: 100%;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* force table width */
+.mobile-table-scroll table {
+    min-width: 900px;
+}
+
+.table .table_head {
+    background-color: #1976d2;
+    color: #fff;
+}
+
+.table_body_row td {
+    border-bottom: 1px solid #c7c5c5
+}
+
+
+.ex_charges_search_div {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.ex_charges_search_icon {
+
+    background-color: #1976d2;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.searchInput {
+    width: 40%;
+}
+
+.ex_charges_search_icon span {
+    color: #fff;
+    font-size: 18px;
+}

@@ -1,0 +1,79 @@
+/* Wrapper to center card */
+.admin_login_wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  /* background-image: url('../../assets/bg_four.jpg');
+  background-size: cover; */
+}
+
+/* Card styling */
+.admin_login_card {
+  background: #fff;
+  padding: 40px 35px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+
+}
+
+/* Heading */
+.admin_heading {
+  font-size: 26px;
+  font-weight: 700;
+  color: #243b55;
+  margin-bottom: 5px;
+}
+
+/* Subheading */
+.admin_subheading {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Input fields */
+.login_input_field {
+  margin-bottom: 20px !important;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* Button */
+.admin_login_btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.admin_login_btn:hover {
+  background: linear-gradient(135deg, #764ba2, #667eea);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(118, 75, 162, 0.4);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,201 @@
+.R_main_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+       width: 100%;
+
+}
+
+.register_login_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 95%;
+    height: 500px;
+       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+    border-radius: 70px;
+
+}
+
+.image_div_login {
+    width: 50%;
+    height: 500px;
+}
+
+.image_login {
+    width: 100%;
+    height: 500px;
+    border-bottom-right-radius: 70px;
+    border-top-right-radius: 70px
+}
+
+.register_form {
+    width: 50%;
+    padding: 20px;
+}
+
+.register_form .h6 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1976d2;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    background-color: transparent;
+
+}
+
+.register_form .form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.form .r_input {
+    width: 100%;
+    margin: 10px;
+}
+
+.form .btn {
+    width: 30%;
+    background-color: #1976d2;
+
+}
+.form .btn:hover{
+     /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(27,2,82,1) 52%, rgba(0,147,176,1) 100%); */
+     background-color: #87d5f7;
+}
+
+.f_div {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+
+.f_div .forgot {
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+}
+
+.text1{
+    font-size: 18px;
+}
+.text2{
+    font-size: 18px;
+}
+
+/* ------------------------- MEDIA QUERIES ------------------------- */
+/* 1180px to 992px */
+@media (max-width: 1180px) {}
+
+/* 991px to 768px */
+@media (max-width: 991px) {}
+
+/* 767px to 576px */
+@media (max-width: 767px) {
+    .register_login_1 {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .form {
+        padding: 10px;
+    }
+
+    .register_form .h6 {
+        margin-bottom: 20px;
+    }
+}
+
+/* 575px to 360px */
+@media (max-width: 575px) {
+    .register_login_1 {
+        flex-direction: column;
+        height: 640px;
+
+    }
+
+    .image_div_login {
+        width: 100%;
+        height: 300px;
+
+    }
+
+    .image_login {
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+        height: 300px;
+        border-top-right-radius: 70px;
+        border-top-left-radius: 70px;
+
+    }
+
+    .register_form {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 40px;
+    }
+
+    .form .r_input {
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .form .btn {
+        margin-top: 10px;
+    }
+
+
+
+
+
+
+}
+
+@media (max-width: 440px) {
+    .register_login_1 {
+        height: 620px;
+    }
+
+    .R_main_1 {
+        height: 120vh;
+        padding: 10px;
+    }
+
+    .text1{
+        font-size: 14px;
+    }
+    .text2{
+        font-size: 14px;
+    }
+
+
+}
+
+/* Below 360px */
+@media (max-width: 360px) {
+    .image_div_login {
+        width: 100%;
+        height: 220px;
+
+    }
+
+    .image_login {
+      
+        height: 230px;
+      
+    }
+}

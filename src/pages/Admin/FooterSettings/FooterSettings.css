@@ -1,0 +1,98 @@
+.footer-form {
+  width: 100%;
+  /* max-width: 700px; */
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  margin-top: 80px;
+}
+
+.footer-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 2px solid #eee;
+}
+
+.form-label {
+  flex: 1;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.form-value {
+  flex: 2;
+  padding: 0 10px;
+  color: #444;
+  word-break: break-word;
+}
+
+.form-row input,
+.form-row textarea {
+  flex: 2;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.edit-btn,
+.save-btn {
+  background: var(--primary-blue);
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-btn:hover,
+.save-btn:hover {
+  background: #125aa0;
+}
+/* --- Force Edit/Save buttons to always be visible --- */
+.footer-form .edit-btn,
+.footer-form .save-btn {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: inline-block !important;
+}
+/* --- Always show Edit and Save buttons, disable hover-only visibility --- */
+.footer-form .form-row button,
+.footer-form .edit-btn,
+.footer-form .save-btn {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: inline-block !important;
+  pointer-events: auto !important;
+  transition: none !important;
+}
+.footer-form .form-row:hover .edit-btn,
+.footer-form .form-row:hover .save-btn {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: inline-block !important;
+}
+/* DEBUG: force show buttons visually */
+
+
+.footer-form button {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: inline-block !important;
+  position: relative !important;
+  z-index: 9999 !important;
+  background: #007bff !important;
+  color: #fff !important;
+}
